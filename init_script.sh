@@ -8,13 +8,16 @@ npm i mongodb && \
 echo "npm i -D nodemon" && \
 npm i -D nodemon && \
 echo "npm i dotenv" && \
+npm i -D morgan && \
 npm i dotenv && \
 echo "npm install -D @babel/core @babel/preset-env @babel/node" && \
 npm install -D @babel/cli @babel/core @babel/preset-env && \
 echo "create babel.config.json" && \
 touch babel.config.json && \
 echo "{\"presets\": [\"@babel/preset-env\"] }" >> babel.config.json && \
-
+npm i -D @babel/node && \
+npm install @babel/runtime && \
+npm install -D @babel/plugin-transform-runtime && \
 
 echo "Crear estructura de proyecto" && \
 mkdir src && cd src && \
